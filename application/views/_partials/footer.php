@@ -1,8 +1,9 @@
-<div class="legal">
-                <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
-                </div>
-                <div class="version">
-                    <b>Version: </b> 1.0.5
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+          <span>Copyright © <?php echo SITE_NAME ." ". Date('Y') ?></span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->

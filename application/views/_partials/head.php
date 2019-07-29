@@ -13,4 +13,4 @@
   <!-- Custom styles for this template-->
   <link href="<?php echo site_url('css/sb-admin-2.min.css') ?>" rel="stylesheet">
  <!-- Custom styles for this page -->
- <link href="<?php echo site_url('vendor/datatables/dataTables.bootstrap4.min.css') ?>" rel="stylesheet">
+ <link href="<?php echo site_url('assets/datatables/dataTables.bootstrap4.min.css') ?>" rel="stylesheet">

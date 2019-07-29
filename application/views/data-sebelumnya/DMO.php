@@ -70,6 +70,88 @@
             <td>68</td>
             <td>100%</td>
             <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+          </tr>
+          <tr>
+            <td>ODC-MYR-FBU</td>
+            <td>Jl. Bratang Gedhe 6E</td>
+            <td>68</td>
+            <td>68</td>
+            <td>100%</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+          </tr>
+          <tr>
+            <td>ODC-MYR-FBU</td>
+            <td>Jl. Bratang Gedhe 6E</td>
+            <td>68</td>
+            <td>68</td>
+            <td>100%</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+          </tr>
+          <tr>
+            <td>ODC-MYR-FBU</td>
+            <td>Jl. Bratang Gedhe 6E</td>
+            <td>68</td>
+            <td>68</td>
+            <td>100%</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+          </tr>
+          <tr>
+            <td>ODC-MYR-FBU</td>
+            <td>Jl. Bratang Gedhe 6E</td>
+            <td>68</td>
+            <td>68</td>
+            <td>100%</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
           </tr>
         </tbody>
       </table>

@@ -54,7 +54,7 @@ $route['default_controller'] = 'home';
 $route['data_sebelumnya'] = 'data_sebelumnya';
 
 //data validasi
-$route['data_validasi'] = 'validasi';
+$route['data_validasi'] = 'data_validasi';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

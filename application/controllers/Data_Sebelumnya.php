@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data_Sebelumnya extends CI_Controller {
+class data_sebelumnya extends CI_Controller {
 
 	public function index()
 	{

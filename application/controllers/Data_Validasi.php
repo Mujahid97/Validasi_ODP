@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data_Validasi extends CI_Controller {
+class data_validasi extends CI_Controller {
 
 	public function index()
 	{

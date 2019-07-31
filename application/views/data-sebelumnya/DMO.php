@@ -39,20 +39,11 @@
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
         <tr>
-                <th rowspan="2">ODP</th>
-                <th rowspan="2">Lokasi</th>
-                <th rowspan="2">JML ODP</th>
-                <th rowspan="2">Validated</th>
+                <th rowspan="2">ODC</th>
                 <th rowspan="2">%Validated</th>
-                <th colspan="5">BEFORE</th>
-                <th colspan="6">AFTER</th>
+                <th colspan="6">Detail PORT</th>
             </tr>
           <tr>
-            <th>KAP</th>
-            <th>USED</th>
-            <th>IDLE</th>
-            <th>RUSAK</th>
-            <th>OCC</th>
             <th>KAP</th>
             <th>USED</th>
             <th>IDLE</th>
@@ -64,95 +55,96 @@
         
         <tbody>
           <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ODC-MYR-FBU</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">Lokasi</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Jl. Bratang Gedhe 6E</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">100%</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">Info Validasi</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Jumlah ODP : 68</a>
+                  <a class="dropdown-item disabled" href="#">ODP Tervalidasi : 68</a>
+                  <a class="dropdown-item disabled" href="#">%Tervalidasi : 100%</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">968</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">KAPASITAS</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 960</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 968</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">249</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">PENGGUNAAN</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 424</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 249</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">496</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">PORT KOSONG</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 511</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 496</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">260</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">PORT OFFLINE</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 0</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 206</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">16</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">PORT RUSAK</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 0</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 16</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group ">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">26%</button>
+                <div class="dropdown-menu">
+                  <h5 class="dropdown-header">OKUPANSI</h5>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sebelum : 44%</a>
+                  <a class="dropdown-item disabled" href="#">Sesudah : 26%</a>
+                </div>
+              </div>
+            </td>
           </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
+          
         </tbody>
       </table>
     </div>

@@ -26,20 +26,68 @@
         <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Tables</h1>
+<h1 class="h3 mb-2 text-gray-800">Validasi ODP SO GUBENG</h1>
 <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
 <!-- DataTales Example -->
+<?php $this->load->view("_partials/breadcrumb.php") ?>
+
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Validasi DMO</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Monitoring GBG</h6>
   </div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
         <tr>
-                <th rowspan="2">ODP</th>
+                <th rowspan="2">ODC</th>
+                <th rowspan="2">ODP Target</th>
+                <th rowspan="2">ODP Tervalidasi</th>
+                <th rowspan="2">PORT TARGET</th>
+                <th rowspan="2">PORT Tervalidasi</th>
+                <th colspan="5">Rincian PORT</th>
+            </tr>
+          <tr>
+            <th>USED</th>
+            <th>OFFLINE</th>
+            <th>IDLE</th>
+            <th>LOS</th>
+            <th>RUSAK</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>ODC-MYR-FBU</td>
+            <td>Jl. Bratang Gedhe 6E</td>
+            <td>68</td>
+            <td>68</td>
+            <td>100%</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            <td>960</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Validasi GBG</h6>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+                <th rowspan="2">ODC</th>
                 <th rowspan="2">Lokasi</th>
                 <th rowspan="2">JML ODP</th>
                 <th rowspan="2">Validated</th>

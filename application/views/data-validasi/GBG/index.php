@@ -24,18 +24,22 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-        <h1 class="h3 mb-2 text-gray-800">Data Proses Validasi</h1>
-        <p class="mb-4">Deskripsi Disini...</p>
-        <?php $this->load->view("_partials/breadcrumb.php") ?>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/DMO') ?>" role="button">DARMO</a>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/GBG') ?>" role="button">GUBENG</a>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/IJK') ?>" role="button">INJOKO</a>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR') ?>" role="button">JAGIR</a>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/MYR') ?>" role="button">MANYAR</a>
-        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/RKT') ?>" role="button">RUNGKUT</a>
-        <br></br>
-        </div>
-        <!-- End of Main Content -->
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi GUBENG</h1>
+<p class="mb-4">Deskripsi Disini...</p>
+<?php $this->load->view("_partials/breadcrumb.php") ?>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/GBG/Validasi') ?>" role="button">Validasi</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/GBG/Monitoring') ?>" role="button">Monitoring</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/GBG/Detail') ?>" role="button">Detail</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/GBG/RekapDC') ?>" role="button">Rekap Drop Core</a>
+<br></br>
+<!-- DataTales Example -->
+
+
+</div>
+<!-- /.container-fluid -->
+<!-- End of Main Content -->
 
       <?php $this->load->view("_partials/footer.php") ?>
 

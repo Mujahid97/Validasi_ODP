@@ -28,7 +28,12 @@
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Tables</h1>
 <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
-
+  <?php $this->load->view("_partials/breadcrumb.php") ?>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/DMO/Validasi') ?>" role="button">Validasi</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/DMO/Monitoring') ?>" role="button">Monitoring</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/DMO/Detail') ?>" role="button">Detail</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/DMO/RekapDC') ?>" role="button">Rekap Drop Core</a>
+<br></br>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
   <div class="card-header py-3">

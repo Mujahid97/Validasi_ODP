@@ -39,41 +39,52 @@
 
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Monitoring GBG</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Detail</h6>
   </div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
-        <tr>
-                <th rowspan="2">ODC</th>
-                <th rowspan="2">ODP Target</th>
-                <th rowspan="2">ODP Tervalidasi</th>
-                <th rowspan="2">PORT TARGET</th>
-                <th rowspan="2">PORT Tervalidasi</th>
-                <th colspan="5">Rincian PORT</th>
-            </tr>
           <tr>
-            <th>USED</th>
-            <th>OFFLINE</th>
-            <th>IDLE</th>
-            <th>LOS</th>
-            <th>RUSAK</th>
+            <th>ODP</th>
+            <th>Tanggal Validasi</th>
+            <th>KAP Sebelum</th>
+            <th>KAP Sesudah</th>
+            <th>Jumlah isi Sebelum</th>
+            <th>Jumlah KAP Sesudah</th>
+            <th>Cek KAP</th>
+            <th>Jumlah KAP Tercatat</th>
+            <th>Validasi Kapasitas</th>
+            <th>PORT KOSONG</th>
+            <th>PORT OFFLINE</th>
+            <th>PORT RUSAK</th>
+            <th>PORT PASSIVE</th>
+            <th>Validasi PORT</th>
+            <th>CEK ISI 1</th>
+            <th>CEK ISI 2</th>
+            <th>KETERANGAN</th>
           </tr>
         </thead>
         
         <tbody>
           <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
+          <td>ODP</td>
+            <td>Tanggal Validasi</td>
+            <td>KAP Sebelum</td>
+            <td>KAP Sesudah</td>
+            <td>Jumlah isi Sebelum</td>
+            <td>Jumlah KAP Sesudah</td>
+            <td>Cek KAP</td>
+            <td>Jumlah KAP Tercatat</td>
+            <td>Validasi Kapasitas</td>
+            <td>PORT KOSONG</td>
+            <td>PORT OFFLINE</td>
+            <td>PORT RUSAK</td>
+            <td>PORT PASSIVE</td>
+            <td>Validasi PORT</td>
+            <td>CEK ISI 1</td>
+            <td>CEK ISI 2</td>
+            <td>KETERANGAN</td>
             
           </tr>
           

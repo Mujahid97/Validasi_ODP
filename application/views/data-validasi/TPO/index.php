@@ -26,13 +26,13 @@
         <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi JAGIR</h1>
+<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi TROPODO</h1>
 <p class="mb-4">Deskripsi Disini...</p>
 <?php $this->load->view("_partials/breadcrumb.php") ?>
-<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR/Validasi') ?>" role="button">Validasi</a>
-<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR/Monitoring') ?>" role="button">Monitoring</a>
-<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR/Detail') ?>" role="button">Detail</a>
-<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR/RekapDC') ?>" role="button">Rekap Drop Core</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/TPO/Validasi') ?>" role="button">Validasi</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/TPO/Monitoring') ?>" role="button">Monitoring</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/TPO/Detail') ?>" role="button">Detail</a>
+<a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/TPO/RekapDC') ?>" role="button">Rekap Drop Core</a>
 <br></br>
 <!-- DataTales Example -->
 

@@ -4,7 +4,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+        <i class="fas fa-check-double"></i>
         </div>
         <div class="sidebar-brand-text mx-3"><?php echo SITE_NAME ?></div>
       </a>
@@ -42,6 +42,8 @@
             <a class="collapse-item" href="<?php echo site_url('Data_Sebelumnya/JGR') ?>">JGR</a>
             <a class="collapse-item" href="<?php echo site_url('Data_Sebelumnya/MYR') ?>">MYR</a>
             <a class="collapse-item" href="<?php echo site_url('Data_Sebelumnya/RKT') ?>">RKT</a>
+            <a class="collapse-item" href="<?php echo site_url('Data_Sebelumnya/TPO') ?>">TPO</a>
+            <a class="collapse-item" href="<?php echo site_url('Data_Sebelumnya/WRU') ?>">WRU</a>
           </div>
         </div>
       </li>
@@ -61,6 +63,8 @@
             <a class="collapse-item" href="<?php echo site_url('Data_Validasi/JGR') ?>">JGR</a>
             <a class="collapse-item" href="<?php echo site_url('Data_Validasi/MYR') ?>">MYR</a>
             <a class="collapse-item" href="<?php echo site_url('Data_Validasi/RKT') ?>">RKT</a>
+            <a class="collapse-item" href="<?php echo site_url('Data_Validasi/TPO') ?>">TPO</a>
+            <a class="collapse-item" href="<?php echo site_url('Data_Validasi/WRU') ?>">WRU</a>
           </div>
         </div>
       </li>      

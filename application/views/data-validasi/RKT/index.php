@@ -26,7 +26,7 @@
         <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi INJOKO</h1>
+<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi RUNGKUT</h1>
 <p class="mb-4">Deskripsi Disini...</p>
 <?php $this->load->view("_partials/breadcrumb.php") ?>
 <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/RKT/Validasi') ?>" role="button">Validasi</a>

@@ -26,123 +26,68 @@
         <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Tables</h1>
+<h1 class="h3 mb-2 text-gray-800">Data ODP SO DARMO</h1>
 <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
 <!-- DataTales Example -->
+<?php $this->load->view("_partials/breadcrumb.php") ?>
+
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Validasi DMO</h6>
+    <h6 class="m-0 font-weight-bold text-primary">DARMO</h6>
   </div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
-        <tr>
-                <th rowspan="2">ODC</th>
-                <th rowspan="2">%Validated</th>
-                <th colspan="6">Detail PORT</th>
-            </tr>
           <tr>
-            <th>KAP</th>
-            <th>USED</th>
-            <th>IDLE</th>
-            <th>OFFLINE</th>
-            <th>RUSAK</th>
-            <th>OCC</th>
+          <th>REGIONAL</th>
+          <th>WITEL</th>
+          <th>DATEL</th>
+          <th>STO</th>
+          <th>STO_DESC</th>
+          <th>NOSS_ID</th>
+          <th>ODP_INDEX</th>
+          <th>ODP_NAME</th>
+          <th>LATITUDE</th>
+          <th>LONGITUDE</th>
+          <th>CLUSNAME</th>
+          <th>CLUSTERSATATUS</th>
+          <th>AVAI</th>
+          <th>USED</th>
+          <th>RSV</th>
+          <th>RSK</th>
+          <th>IS_TOTAL</th>
+          <th>ODP_INFO</th>
+          <th>UPDATE_DATE</th>
+          <th>PERIODE</th>
+          <th>STATUS</th>
           </tr>
         </thead>
         
         <tbody>
           <tr>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ODC-MYR-FBU</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">Lokasi</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Jl. Bratang Gedhe 6E</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">100%</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">Info Validasi</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Jumlah ODP : 68</a>
-                  <a class="dropdown-item disabled" href="#">ODP Tervalidasi : 68</a>
-                  <a class="dropdown-item disabled" href="#">%Tervalidasi : 100%</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">968</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">KAPASITAS</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 960</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 968</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">249</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">PENGGUNAAN</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 424</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 249</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">496</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">PORT KOSONG</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 511</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 496</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">260</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">PORT OFFLINE</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 0</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 206</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">16</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">PORT RUSAK</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 0</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 16</a>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="btn-group ">
-                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">26%</button>
-                <div class="dropdown-menu">
-                  <h5 class="dropdown-header">OKUPANSI</h5>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item disabled" href="#">Sebelum : 44%</a>
-                  <a class="dropdown-item disabled" href="#">Sesudah : 26%</a>
-                </div>
-              </div>
-            </td>
+          <td>REGIONAL</td>
+          <td>WITEL</td>
+          <td>DATEL</td>
+          <td>STO</td>
+          <td>STO_DESC</td>
+          <td>NOSS_ID</td>
+          <td>ODP_INDEX</td>
+          <td>ODP_NAME</td>
+          <td>LATITUDE</td>
+          <td>LONGITUDE</td>
+          <td>CLUSNAME</td>
+          <td>CLUSTERSATATUS</td>
+          <td>AVAI</td>
+          <td>USED</td>
+          <td>RSV</td>
+          <td>RSK</td>
+          <td>IS_TOTAL</td>
+          <td>ODP_INFO</td>
+          <td>UPDATE_DATE</td>
+          <td>PERIODE</td>
+          <td>STATUS</td>
           </tr>
           
         </tbody>
@@ -150,6 +95,7 @@
     </div>
   </div>
 </div>
+
 
 </div>
 <!-- /.container-fluid -->

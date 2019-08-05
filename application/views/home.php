@@ -23,7 +23,7 @@
       <?php $this->load->view("_partials/topbar.php") ?>
 
         <!-- Begin Page Content -->
-        <?php $this->load->view("_partials/default_contents.php") ?>
+        <?php $this->load->view("_partials/contents.php") ?>
       <!-- End of Main Content -->
 
       <?php $this->load->view("_partials/footer.php") ?>

@@ -36,6 +36,15 @@ class Data_Sebelumnya extends CI_Controller {
     public function RKT()
 	{
 		$this->load->view('data-sebelumnya/RKT');
-    }
+	}
 	
+	public function WRU()
+	{
+		$this->load->view('data-sebelumnya/WRU');
+	}
+	
+	public function TPO()
+	{
+		$this->load->view('data-sebelumnya/TPO');
+    }
 }

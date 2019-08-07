@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class WRU extends CI_Model {
+class RKT_MODEL extends CI_Model {
   public function filter($search, $limit, $start, $order_field, $order_ascdesc){
     $this->db->like('REGIONAL', $search); // Untuk menambahkan query where LIKE
     $this->db->or_like('WITEL', $search); // Untuk menambahkan query where OR LIKE
@@ -26,11 +26,11 @@ class WRU extends CI_Model {
     $this->db->order_by($order_field, $order_ascdesc); // Untuk menambahkan query ORDER BY
     $this->db->limit($limit, $start); // Untuk menambahkan query LIMIT
 
-    return $this->db->get('WRU_BEFORE')->result_array(); // Eksekusi query sql sesuai kondisi diatas
+    return $this->db->get('RKT_BEFORE')->result_array(); // Eksekusi query sql sesuai kondisi diatas
   }
 
   public function count_all(){
-    return $this->db->count_all('WRU_BEFORE'); // Untuk menghitung semua data siswa
+    return $this->db->count_all('RKT_BEFORE'); // Untuk menghitung semua data siswa
   }
 
   public function count_filter($search){
@@ -56,6 +56,6 @@ class WRU extends CI_Model {
     $this->db->or_like('PERIODE', $search);
     $this->db->or_like('STATUS', $search);
 
-    return $this->db->get('WRU_BEFORE')->num_rows(); // Untuk menghitung jumlah data sesuai dengan filter pada textbox pencarian
+    return $this->db->get('RKT_BEFORE')->num_rows(); // Untuk menghitung jumlah data sesuai dengan filter pada textbox pencarian
   }
 }

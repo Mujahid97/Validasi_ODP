@@ -23,7 +23,20 @@
       <?php $this->load->view("_partials/topbar.php") ?>
 
         <!-- Begin Page Content -->
-        
+        <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800">Data Proses Validasi</h1>
+        <p class="mb-4">Deskripsi Disini...</p>
+        <?php $this->load->view("_partials/breadcrumb.php") ?>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/DMO') ?>" role="button">DARMO</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/GBG') ?>" role="button">GUBENG</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/IJK') ?>" role="button">INJOKO</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/JGR') ?>" role="button">JAGIR</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/MYR') ?>" role="button">MANYAR</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/RKT') ?>" role="button">RUNGKUT</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/WRU') ?>" role="button">WARU</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/TPO') ?>" role="button">TROPODO</a> 
+        <br></br>
+        </div>
         <!-- End of Main Content -->
 
       <?php $this->load->view("_partials/footer.php") ?>

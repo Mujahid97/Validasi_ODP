@@ -33,6 +33,8 @@
         <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/JGR') ?>" role="button">JAGIR</a>
         <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/MYR') ?>" role="button">MANYAR</a>
         <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/RKT') ?>" role="button">RUNGKUT</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/WRU') ?>" role="button">WARU</a>
+        <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/TPO') ?>" role="button">TROPODO</a>
         <br></br>
         </div>
         <!-- End of Main Content -->

@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 //data awal
-$route['Data_Sebelumnya'] = 'Data_Sebelumnya';
+$route['Data_Sebelumnya'] = 'Data_Sebelumnya/Overview';
 
 //data validasi
 $route['Data_Validasi'] = 'Data_Validasi/Overview';

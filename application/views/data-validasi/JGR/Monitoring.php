@@ -26,8 +26,8 @@
         <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi GUBENG</h1>
-<p class="mb-4">MONITORING PROJECT VALIDASI SERVICE TO NEW SALES SO GUBENG</p>
+<h1 class="h3 mb-2 text-gray-800">Data Proses Validasi JAGIR</h1>
+<p class="mb-4">MONITORING PROJECT VALIDASI SERVICE TO NEW SALES SO JAGIR</p>
 
 <!-- DataTales Example -->
 <?php $this->load->view("_partials/breadcrumb.php") ?>

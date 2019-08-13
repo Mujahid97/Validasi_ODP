@@ -27,7 +27,7 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Data ODP SO DARMO</h1>
-<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+<p class="mb-4">Deskripsi disini...</p>
 
 <!-- DataTales Example -->
 <?php $this->load->view("_partials/breadcrumb.php") ?>
@@ -38,7 +38,7 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <table class="table table-bordered" id="siis-dmo" width="100%" cellspacing="0">
         <thead>
           <tr>
           <th>REGIONAL</th>
@@ -52,7 +52,7 @@
           <th>LATITUDE</th>
           <th>LONGITUDE</th>
           <th>CLUSNAME</th>
-          <th>CLUSTERSATATUS</th>
+          <th>CLUSTERSTATUS</th>
           <th>AVAI</th>
           <th>USED</th>
           <th>RSV</th>
@@ -65,32 +65,7 @@
           </tr>
         </thead>
         
-        <tbody>
-          <tr>
-          <td>REGIONAL</td>
-          <td>WITEL</td>
-          <td>DATEL</td>
-          <td>STO</td>
-          <td>STO_DESC</td>
-          <td>NOSS_ID</td>
-          <td>ODP_INDEX</td>
-          <td>ODP_NAME</td>
-          <td>LATITUDE</td>
-          <td>LONGITUDE</td>
-          <td>CLUSNAME</td>
-          <td>CLUSTERSATATUS</td>
-          <td>AVAI</td>
-          <td>USED</td>
-          <td>RSV</td>
-          <td>RSK</td>
-          <td>IS_TOTAL</td>
-          <td>ODP_INFO</td>
-          <td>UPDATE_DATE</td>
-          <td>PERIODE</td>
-          <td>STATUS</td>
-          </tr>
-          
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   </div>
@@ -133,6 +108,49 @@
     </div>
   </div>
 <?php $this->load->view("_partials/js.php") ?>
+<script>
+var tabel = null;
+
+$(document).ready(function() {
+    tabel = $('#siis-dmo').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ordering": true, // Set true agar bisa di sorting
+        "order": [[ 0, 'asc' ]], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+        "ajax":
+        {
+            "url": "<?php echo base_url('Data_Sebelumnya/DMO/view') ?>", // URL file untuk proses select datanya
+            "type": "POST"
+        },
+        "deferRender": true,
+        "aLengthMenu": [[5, 10, 50, 100, 200],[ 5, 10, 50, 100,200]], // Combobox Limit
+        "columns": [
+            { "data": "REGIONAL" }, 
+            { "data": "WITEL" },
+            { "data": "DATEL" }, 
+            { "data": "STO" },
+            { "data": "STO_DESC" },
+            { "data": "NOSS_ID" },
+            { "data": "ODP_INDEX" }, 
+            { "data": "ODP_NAME" },
+            { "data": "LATITUDE" },
+            { "data": "LONGITUDE" },
+            { "data": "CLUSNAME" },
+            { "data": "CLUSTERSTATUS" },
+            { "data": "AVAI" },
+            { "data": "USED" },
+            { "data": "RSV" },
+            { "data": "RSK" },
+            { "data": "IS_TOTAL" },
+            { "data": "ODP_INFO" },
+            { "data": "UPDATE_DATE" },
+            { "data": "PERIODE" },
+            { "data": "STATUS" },
+        ],
+    });
+});
+
+</script>
 
 </body>
 

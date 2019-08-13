@@ -38,7 +38,7 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="wru-before" width="100%" cellspacing="0">
+      <table class="table table-bordered" id="siis-wru" width="100%" cellspacing="0">
         <thead>
           <tr>
           <th>REGIONAL</th>
@@ -52,7 +52,7 @@
           <th>LATITUDE</th>
           <th>LONGITUDE</th>
           <th>CLUSNAME</th>
-          <th>CLUSTERSATATUS</th>
+          <th>CLUSTERSTATUS</th>
           <th>AVAI</th>
           <th>USED</th>
           <th>RSV</th>
@@ -112,7 +112,7 @@
 var tabel = null;
 
 $(document).ready(function() {
-    tabel = $('#wru-before').DataTable({
+    tabel = $('#siis-wru').DataTable({
         "processing": true,
         "serverSide": true,
         "ordering": true, // Set true agar bisa di sorting

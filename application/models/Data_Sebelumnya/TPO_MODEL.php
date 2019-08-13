@@ -13,7 +13,7 @@ class TPO_MODEL extends CI_Model {
     $this->db->or_like('LATITUDE', $search);
     $this->db->or_like('LONGITUDE', $search);
     $this->db->or_like('CLUSNAME', $search);
-    $this->db->or_like('CLUSTERSATATUS', $search);
+    $this->db->or_like('CLUSTERSTATUS', $search);
     $this->db->or_like('AVAI', $search);
     $this->db->or_like('USED', $search);
     $this->db->or_like('RSV', $search);
@@ -26,11 +26,11 @@ class TPO_MODEL extends CI_Model {
     $this->db->order_by($order_field, $order_ascdesc); // Untuk menambahkan query ORDER BY
     $this->db->limit($limit, $start); // Untuk menambahkan query LIMIT
 
-    return $this->db->get('TPO_BEFORE')->result_array(); // Eksekusi query sql sesuai kondisi diatas
+    return $this->db->get('SIIS_TPO')->result_array(); // Eksekusi query sql sesuai kondisi diatas
   }
 
   public function count_all(){
-    return $this->db->count_all('TPO_BEFORE'); // Untuk menghitung semua data siswa
+    return $this->db->count_all('SIIS_TPO'); // Untuk menghitung semua data siswa
   }
 
   public function count_filter($search){
@@ -45,7 +45,7 @@ class TPO_MODEL extends CI_Model {
     $this->db->or_like('LATITUDE', $search);
     $this->db->or_like('LONGITUDE', $search);
     $this->db->or_like('CLUSNAME', $search);
-    $this->db->or_like('CLUSTERSATATUS', $search);
+    $this->db->or_like('CLUSTERSTATUS', $search);
     $this->db->or_like('AVAI', $search);
     $this->db->or_like('USED', $search);
     $this->db->or_like('RSV', $search);
@@ -56,6 +56,6 @@ class TPO_MODEL extends CI_Model {
     $this->db->or_like('PERIODE', $search);
     $this->db->or_like('STATUS', $search);
 
-    return $this->db->get('TPO_BEFORE')->num_rows(); // Untuk menghitung jumlah data sesuai dengan filter pada textbox pencarian
+    return $this->db->get('SIIS_TPO')->num_rows(); // Untuk menghitung jumlah data sesuai dengan filter pada textbox pencarian
   }
 }

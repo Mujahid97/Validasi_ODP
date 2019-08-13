@@ -35,7 +35,11 @@
 <a class="btn btn-primary" href="<?php echo site_url('Data_Validasi/MYR/RekapDC') ?>" role="button">Rekap Drop Core</a>
 <br></br>
 <div class="row">
-
+  
+<?php $query_myr = $this->db->query('SELECT * FROM SIIS_MYR'); ?>
+<?php $query_myr_row = $query_myr->num_rows(); ?>
+<?php $query_valdat1 = 1200; ?>
+<?php $query_valdat2 = round(($query_valdat1/$query_myr_row)*100); ?>
 <!-- Earnings (Monthly) Card Example -->
 <div class="col-xl-3 col-md-6 mb-4">
   <div class="card border-left-primary shadow h-100 py-2">
@@ -43,7 +47,7 @@
       <div class="row no-gutters align-items-center">
         <div class="col mr-2">
           <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah ODP</div>
-          <div class="h5 mb-0 font-weight-bold text-gray-800">10000</div>
+          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $query_myr_row; ?></div>
         </div>
         <div class="col-auto">
           <i class="fas fa-list fa-2x text-gray-300"></i>
@@ -60,7 +64,7 @@
       <div class="row no-gutters align-items-center">
         <div class="col mr-2">
           <div class="text-xs font-weight-bold text-success text-uppercase mb-1">ODP Tervalidasi</div>
-          <div class="h5 mb-0 font-weight-bold text-gray-800">7000</div>
+          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $query_valdat1; ?></div>
         </div>
         <div class="col-auto">
           <i class="fas fa-check fa-2x text-gray-300"></i>
@@ -79,11 +83,11 @@
           <div class="text-xs font-weight-bold text-info text-uppercase mb-1">%Tervalidasi</div>
           <div class="row no-gutters align-items-center">
             <div class="col-auto">
-              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $query_valdat2; ?>%</div>
             </div>
             <div class="col">
               <div class="progress progress-sm mr-2">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo $query_valdat2; ?>%" aria-valuenow="<?php echo $query_valdat2; ?>" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -113,7 +117,6 @@
   </div>
 </div>
 </div>
-
 
 </div>
 <!-- /.container-fluid -->

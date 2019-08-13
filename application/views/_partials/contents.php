@@ -1,3 +1,18 @@
+<?php $query_dmo = $this->db->query('SELECT * FROM SIIS_DMO'); ?>
+<?php $query_gbg = $this->db->query('SELECT * FROM SIIS_GBG'); ?>
+<?php $query_ijk = $this->db->query('SELECT * FROM SIIS_IJK'); ?>
+<?php $query_jgr = $this->db->query('SELECT * FROM SIIS_JGR'); ?>
+<?php $query_myr = $this->db->query('SELECT * FROM SIIS_MYR'); ?>
+<?php $query_rkt = $this->db->query('SELECT * FROM SIIS_RKT'); ?>
+<?php $query_tpo = $this->db->query('SELECT * FROM SIIS_TPO'); ?>
+<?php $query_wru = $this->db->query('SELECT * FROM SIIS_WRU'); ?>
+
+
+
+<?php $query_all = $query_dmo->num_rows()+$query_gbg->num_rows()+$query_ijk->num_rows()+$query_jgr->num_rows()+$query_myr->num_rows()+$query_rkt->num_rows()+$query_tpo->num_rows()+$query_wru->num_rows(); ?>
+<?php $query_valdat1 = 12000; ?>
+<?php $query_valdat2 = round(($query_valdat1/$query_all)*100); ?>
+
 <div class="container-fluid">
 
           <!-- Page Heading -->
@@ -16,7 +31,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Jumlah ODP</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">10000</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $query_all ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-list fa-2x text-gray-300"></i>
@@ -33,7 +48,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">ODP Tervalidasi</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">7000</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $query_valdat1 ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-check fa-2x text-gray-300"></i>
@@ -52,11 +67,11 @@
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">%Tervalidasi</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $query_valdat2 ?>%</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo $query_valdat2 ?>%" aria-valuenow="<?php echo $query_valdat2 ?>" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
                       </div>
@@ -110,6 +125,9 @@
                     </div>
                   </div>
                 </div>
+
+
+
                 <!-- Card Body -->
                 <div class="card-body">
                 <div class="table-responsive">
@@ -125,13 +143,65 @@
                     </thead>
                     <tbody>
                       <tr>
-                      <td>NAMA_SO</td>
-                      <td>JUMLAH_ODP</td>
+                      <td>DARMO</td>
+                      <td><?php echo $query_dmo->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <tr>
+                      <td>GUBENG</td>
+                      <td><?php echo $query_gbg->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>INJOKO</td>
+                      <td><?php echo $query_ijk->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>JAGIR</td>
+                      <td><?php echo $query_jgr->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>MANYAR</td>
+                      <td><?php echo $query_myr->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>RUNGKUT</td>
+                      <td><?php echo $query_rkt->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>TROPODO</td>
+                      <td><?php echo $query_tpo->num_rows(); ?></td>
+                       <td>ODP_TERVALIDASI</td>
+                        <td>%TERVALIDASI</td>
+                        <td>DATA_BERMASALAH</td>
+                      </tr>
+                      <td>WARU</td>
+                      <td><?php echo $query_wru->num_rows(); ?></td>
                        <td>ODP_TERVALIDASI</td>
                         <td>%TERVALIDASI</td>
                         <td>DATA_BERMASALAH</td>
                       </tr>
                     </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>TOTAL</th>
+                        <th><?php echo $query_all ?></th>
+                        <th><?php echo $query_valdat1 ?></th>
+                        <th><?php echo $query_valdat2 ?>%</th>
+                        <th>DATA_BERMASALAH</th>
+                      </tr>
+                    </tfoot>
                     </table>
                   </div>
                 </div>

@@ -25,9 +25,11 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
+<?php $query = $this->db->query('SELECT * FROM SIIS_DMO'); ?>
+<?php $query1 = $this->db->query('SELECT COUNT(*) FROM SIIS_DMO'); ?>
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Data ODP SO DARMO</h1>
-<p class="mb-4"></p>
+<p class="mb-4"><?php echo $query->num_rows(); ?></p>
 
 <!-- DataTales Example -->
 <?php $this->load->view("_partials/breadcrumb.php") ?>

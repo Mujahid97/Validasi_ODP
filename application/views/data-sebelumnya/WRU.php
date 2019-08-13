@@ -136,7 +136,7 @@ $(document).ready(function() {
             { "data": "LATITUDE" },
             { "data": "LONGITUDE" },
             { "data": "CLUSNAME" },
-            { "data": "CLUSTERSATATUS" },
+            { "data": "CLUSTERSTATUS" },
             { "data": "AVAI" },
             { "data": "USED" },
             { "data": "RSV" },

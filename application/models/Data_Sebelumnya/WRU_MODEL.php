@@ -13,7 +13,7 @@ class WRU_MODEL extends CI_Model {
     $this->db->or_like('LATITUDE', $search);
     $this->db->or_like('LONGITUDE', $search);
     $this->db->or_like('CLUSNAME', $search);
-    $this->db->or_like('CLUSTERSATATUS', $search);
+    $this->db->or_like('CLUSTERSTATUS', $search);
     $this->db->or_like('AVAI', $search);
     $this->db->or_like('USED', $search);
     $this->db->or_like('RSV', $search);
@@ -45,7 +45,7 @@ class WRU_MODEL extends CI_Model {
     $this->db->or_like('LATITUDE', $search);
     $this->db->or_like('LONGITUDE', $search);
     $this->db->or_like('CLUSNAME', $search);
-    $this->db->or_like('CLUSTERSATATUS', $search);
+    $this->db->or_like('CLUSTERSTATUS', $search);
     $this->db->or_like('AVAI', $search);
     $this->db->or_like('USED', $search);
     $this->db->or_like('RSV', $search);

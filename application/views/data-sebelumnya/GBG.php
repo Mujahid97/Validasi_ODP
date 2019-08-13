@@ -66,6 +66,31 @@
         </thead>
         
         <tbody></tbody>
+        <tfoot>
+          <tr>
+          <th>REGIONAL</th>
+          <th>WITEL</th>
+          <th>DATEL</th>
+          <th>STO</th>
+          <th>STO_DESC</th>
+          <th>NOSS_ID</th>
+          <th>ODP_INDEX</th>
+          <th>ODP_NAME</th>
+          <th>LATITUDE</th>
+          <th>LONGITUDE</th>
+          <th>CLUSNAME</th>
+          <th>CLUSTERSTATUS</th>
+          <th>AVAI</th>
+          <th>USED</th>
+          <th>RSV</th>
+          <th>RSK</th>
+          <th>IS_TOTAL</th>
+          <th>ODP_INFO</th>
+          <th>UPDATE_DATE</th>
+          <th>PERIODE</th>
+          <th>STATUS</th>
+          </tr>
+        </tfoot>
       </table>
     </div>
   </div>

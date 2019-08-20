@@ -37,8 +37,10 @@
 <div class="row">
 
 <?php $query_rkt = $this->db->query('SELECT * FROM SIIS_RKT'); ?>
+<?php $query_rkt_valdat = $this->db->query('SELECT DISTINCT ODP FROM SHEET_RKT;'); ?>
+
 <?php $query_rkt_row = $query_rkt->num_rows(); ?>
-<?php $query_valdat1 = 1200; ?>
+<?php $query_valdat1 = $query_rkt_valdat->num_rows(); ?>
 <?php $query_valdat2 = round(($query_valdat1/$query_rkt_row)*100); ?>
 <!-- Earnings (Monthly) Card Example -->
 <div class="col-xl-3 col-md-6 mb-4">

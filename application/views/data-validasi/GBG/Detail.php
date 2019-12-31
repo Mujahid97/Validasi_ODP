@@ -43,52 +43,22 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <table class="table table-bordered" id="detail-gbg" width="100%" cellspacing="0">
         <thead>
           <tr>
-            <th>ODP</th>
             <th>Tanggal Validasi</th>
+            <th>ODP</th>
             <th>KAP Sebelum</th>
             <th>KAP Sesudah</th>
             <th>Jumlah isi Sebelum</th>
-            <th>Jumlah KAP Sesudah</th>
-            <th>Cek KAP</th>
-            <th>Jumlah KAP Tercatat</th>
-            <th>Validasi Kapasitas</th>
-            <th>PORT KOSONG</th>
-            <th>PORT OFFLINE</th>
-            <th>PORT RUSAK</th>
-            <th>PORT PASSIVE</th>
-            <th>Validasi PORT</th>
-            <th>CEK ISI 1</th>
-            <th>CEK ISI 2</th>
-            <th>KETERANGAN</th>
+            <th>Jumlah isi Sesudah</th>
+            <th>Idle</th>
+            <th>Offline</th>
+            <th>Loss</th>
+            <th>Keterangan</th>
           </tr>
         </thead>
-        
-        <tbody>
-          <tr>
-          <td>ODP</td>
-            <td>Tanggal Validasi</td>
-            <td>KAP Sebelum</td>
-            <td>KAP Sesudah</td>
-            <td>Jumlah isi Sebelum</td>
-            <td>Jumlah KAP Sesudah</td>
-            <td>Cek KAP</td>
-            <td>Jumlah KAP Tercatat</td>
-            <td>Validasi Kapasitas</td>
-            <td>PORT KOSONG</td>
-            <td>PORT OFFLINE</td>
-            <td>PORT RUSAK</td>
-            <td>PORT PASSIVE</td>
-            <td>Validasi PORT</td>
-            <td>CEK ISI 1</td>
-            <td>CEK ISI 2</td>
-            <td>KETERANGAN</td>
-            
-          </tr>
-          
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   </div>
@@ -130,6 +100,37 @@
     </div>
   </div>
 <?php $this->load->view("_partials/js.php") ?>
+
+<script>
+var tabel = null;
+$(document).ready(function() {
+    tabel = $('#detail-gbg').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ordering": true, // Set true agar bisa di sorting
+        "order": [[ 0, 'asc' ]], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+        "ajax":
+        {
+            "url": "<?php echo base_url('Data_Validasi/GBG/view_detail') ?>", // URL file untuk proses select datanya
+            "type": "POST"
+        },
+        "deferRender": true,
+        "aLengthMenu": [[50, 100, 500, 5000],[ 50, 100, 500, 5000]], // Combobox Limit
+        "columns": [
+            { "data": "tgl_validasi" }, 
+            { "data": "odp" },
+            { "data": "CAP_PREV" }, 
+            { "data": "CAP_NOW" },
+            { "data": "USED_PREV" }, 
+            { "data": "USED_NOW" },
+            { "data": "IDLE" },
+            { "data": "OFFLINE" }, 
+            { "data": "LOSS" },
+            { "data": "COMMENT" },
+        ],
+    });
+});
+</script>
 
 </body>
 

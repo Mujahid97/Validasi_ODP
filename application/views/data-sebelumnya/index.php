@@ -24,7 +24,7 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-        <h1 class="h3 mb-2 text-gray-800">Data Proses Validasi</h1>
+        <h1 class="h3 mb-2 text-gray-800">Data Sebelum Validasi</h1>
         <p class="mb-4">Deskripsi Disini...</p>
         <?php $this->load->view("_partials/breadcrumb.php") ?>
         <a class="btn btn-primary" href="<?php echo site_url('Data_Sebelumnya/DMO') ?>" role="button">DARMO</a>

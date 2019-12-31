@@ -48,7 +48,6 @@
 <?php $wru_valdat_percentage = round(($wru_valdat/$wru)*100); ?>
 
 
-
 <?php $all_sto = $dmo+$gbg+$ijk+$jgr+$myr+$rkt+$tpo+$wru; ?>
 <?php $valdat_all = $rkt_valdat+$gbg_valdat+$ijk_valdat+$dmo_valdat+$wru_valdat+$tpo_valdat+$myr_valdat+$jgr_valdat; ?>
 <?php $valdat_all_percentage = round(($valdat_all/$all_sto)*100); ?>

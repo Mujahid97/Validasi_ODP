@@ -43,44 +43,30 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+    <table class="table table-bordered" id="rekap-dc" width="100%" cellspacing="0">
         <thead>
           <tr>
-            <th>TGL VALIDASI</th>
-            <th>PIC HD</th>
-            <th>STO</th>
-            <th>ODP</th>
-            <th>KAPASITAS</th>
-            <th>IP GPON (OLT)</th>
-            <th>SLOT / PORT</th>
-            <th>ONU ID</th>
-            <th>POTS / INTERNET</th>
-            <th>STATUS</th>
-            <th>QR DC</th>
-            <th>QR PORT</th>
-            <th>QR ODP</th>
-            <th>TAGGING ODP</th>
-            <th>KETERANGAN</th>
-            <th>ESTETIKA</th>
+          <!-- <th>No</th> -->
+                <th>Tanggal Validasi</th>
+                <th>STO</th>
+                <th>ODP</th>
+                <th>Kapasitas</th>
+                <th>IP GPON</th>
+                <th>SLOT/PORT</th>
+                <th>PORT</th>
+                <th>ONU ID</th>
+                <th>POTS/Internet</th>
+                <th>Status</th>
+                <th>QR DC</th>
+                <th>QR Port</th>
+                <th>QR ODP</th>
+                <th>Tagging ODP</th>
+                <th>Keterangan</th>
+                <th>Estetika</th>
           </tr>
         </thead>
         
-        <tbody>
-          <tr>
-            <td>30/07/2019</td>
-            <td>APRYLA AYU</td>
-            <td>RKT</td>
-            <td>ODP-MYR-FBH/80</td>
-            <td>KAP 8</td>
-            <td>172.27.140.159</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            
-          </tr>
-          
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   </div>
@@ -122,6 +108,47 @@
     </div>
   </div>
 <?php $this->load->view("_partials/js.php") ?>
+
+<script>
+var tabel = null;
+
+$(document).ready(function() {
+    tabel = $('#rekap-dc').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ordering": true, // Set true agar bisa di sorting
+        "order": [[ 0, 'asc' ]], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+        "ajax":
+        {
+            "url": "<?php echo base_url('Data_Validasi/RKT/view_rdc') ?>", // URL file untuk proses select datanya
+            "type": "POST"
+        },
+        "deferRender": true,
+        "aLengthMenu": [[50, 100, 500, 5000],[ 50, 100, 500, 5000]], // Combobox Limit
+        "columns": [
+          //{ "data": "id" }, 
+            { "data": "tgl_validasi" }, 
+            { "data": "sto" },
+            { "data": "odp" }, 
+            { "data": "kapasitas" },
+            { "data": "ip_gpon" },
+            { "data": "slot_port" },
+            { "data": "port_odp" }, 
+            { "data": "onu_id" },
+            { "data": "pots_internet" },
+            { "data": "status" },
+            { "data": "qr_dc" }, 
+            { "data": "qr_port" },
+            { "data": "qr_odp" },
+            { "data": "tagging_odp" }, 
+            { "data": "keterangan" },
+            { "data": "estetika" },
+
+        ],
+    });
+});
+
+</script>
 
 </body>
 

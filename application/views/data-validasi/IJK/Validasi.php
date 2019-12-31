@@ -43,124 +43,28 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <table class="table table-bordered" id="validasi" width="100%" cellspacing="0">
         <thead>
         <tr>
                 <th rowspan="2">ODC</th>
-                <th rowspan="2">Lokasi</th>
                 <th rowspan="2">JML ODP</th>
                 <th rowspan="2">Validated</th>
-                <th rowspan="2">%Validated</th>
-                <th colspan="5">BEFORE</th>
-                <th colspan="6">AFTER</th>
+                <th colspan="4">BEFORE</th>
+                <th colspan="5">AFTER</th>
             </tr>
           <tr>
             <th>KAP</th>
             <th>USED</th>
             <th>IDLE</th>
             <th>RUSAK</th>
-            <th>OCC</th>
             <th>KAP</th>
             <th>USED</th>
             <th>IDLE</th>
             <th>OFFLINE</th>
             <th>RUSAK</th>
-            <th>OCC</th>
           </tr>
         </thead>
-        
-        <tbody>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   </div>
@@ -202,6 +106,43 @@
     </div>
   </div>
 <?php $this->load->view("_partials/js.php") ?>
+
+<script>
+var tabel = null;
+
+$(document).ready(function() {
+    tabel = $('#validasi').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ordering": true, // Set true agar bisa di sorting
+        "order": [[ 0, 'asc' ]], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+        "ajax":
+        {
+            "url": "<?php echo base_url('Data_Validasi/IJK/view_validasi') ?>", // URL file untuk proses select datanya
+            "type": "POST"
+        },
+        "deferRender": true,
+        "aLengthMenu": [[50, 100, 500, 5000],[ 50, 100, 500, 5000]], // Combobox Limit
+        "columns": [
+            { "data": "odc" }, 
+            { "data": "jml_odp" }, 
+            { "data": "validated" },
+            { "data": "cap_prev" }, 
+            { "data": "used_prev" },
+            { "data": "idle_prev" },
+            { "data": "loss_prev" },
+            { "data": "cap_now" }, 
+            { "data": "used_now" },
+            { "data": "idle_now" },
+            { "data": "offline" },
+            { "data": "loss_now" }, 
+            
+
+        ],
+    });
+});
+
+</script> 
 
 </body>
 

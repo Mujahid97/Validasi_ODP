@@ -39,11 +39,11 @@
 
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Monitoring RKT</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Monitoring DMO</h6>
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <table class="table table-bordered" id="monitoring" width="100%" cellspacing="0">
         <thead>
         <tr>
                 <th rowspan="2">ODC</th>
@@ -51,32 +51,16 @@
                 <th rowspan="2">ODP Tervalidasi</th>
                 <th rowspan="2">PORT TARGET</th>
                 <th rowspan="2">PORT Tervalidasi</th>
-                <th colspan="5">Rincian PORT</th>
+                <th colspan="4">Rincian PORT</th>
             </tr>
           <tr>
             <th>USED</th>
             <th>OFFLINE</th>
             <th>IDLE</th>
-            <th>LOS</th>
             <th>RUSAK</th>
           </tr>
         </thead>
-        
-        <tbody>
-          <tr>
-            <td>ODC-MYR-FBU</td>
-            <td>Jl. Bratang Gedhe 6E</td>
-            <td>68</td>
-            <td>68</td>
-            <td>100%</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            <td>960</td>
-            
-          </tr>
-          
+        <tbody>          
         </tbody>
       </table>
     </div>
@@ -119,6 +103,37 @@
     </div>
   </div>
 <?php $this->load->view("_partials/js.php") ?>
+
+<script>
+var tabel = null;
+
+$(document).ready(function() {
+    tabel = $('#monitoring').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ordering": true, // Set true agar bisa di sorting
+        "order": [[ 0, 'asc' ]], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+        "ajax":
+        {
+            "url": "<?php echo base_url('Data_Validasi/RKT/view_validasi') ?>", // URL file untuk proses select datanya
+            "type": "POST"
+        },
+        "deferRender": true,
+        "aLengthMenu": [[50, 100, 500, 5000],[ 50, 100, 500, 5000]], // Combobox Limit
+        "columns": [
+            { "data": "odc" }, 
+            { "data": "jml_odp" }, 
+            { "data": "validated" },
+            { "data": "cap_prev" }, 
+            { "data": "cap_now" }, 
+            { "data": "used_now" },
+            { "data": "offline" },
+            { "data": "idle_now" },
+            { "data": "loss_now" }, 
+        ],
+    });
+});
+</script>
 
 </body>
 

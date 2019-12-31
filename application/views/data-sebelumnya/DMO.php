@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <?php $this->load->view("_partials/head.php") ?>
-
 </head>
-
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
-
   <?php $this->load->view("_partials/sidebar.php") ?>
-
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-
       <!-- Main Content -->
       <div id="content">
-
       <?php $this->load->view("_partials/topbar.php") ?>
-
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
 <?php $query = $this->db->query('SELECT * FROM SIIS_DMO'); ?>
 <?php $query1 = $this->db->query('SELECT COUNT(*) FROM SIIS_DMO'); ?>
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Data ODP SO DARMO</h1>
-<p class="mb-4"><?php echo $query->num_rows(); ?></p>
-
+<p class="mb-4">Deskripsi disini</p>
 <!-- DataTales Example -->
 <?php $this->load->view("_partials/breadcrumb.php") ?>
-
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">DARMO</h6>
@@ -66,9 +53,7 @@
           <th>STATUS</th>
           </tr>
         </thead>
-        
         <tbody></tbody>
-
         <tfoot>
           <tr>
           <th>REGIONAL</th>
@@ -94,25 +79,18 @@
           <th>STATUS</th>
           </tr>
         </tfoot>
-
       </table>
     </div>
   </div>
 </div>
-
-
 </div>
 <!-- /.container-fluid -->
 <!-- End of Main Content -->
-
       <?php $this->load->view("_partials/footer.php") ?>
-
     </div>
     <!-- End of Content Wrapper -->
-
   </div>
   <!-- End of Page Wrapper -->
-
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
@@ -180,7 +158,5 @@ $(document).ready(function() {
 });
 
 </script>
-
 </body>
-
 </html>
